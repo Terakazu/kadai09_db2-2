@@ -1,0 +1,213 @@
+/* 共通のCSS */
+* {
+    box-sizing: border-box;
+   
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p,
+  form, input, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Lato, 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: block;
+    background-color: #16b3eb ;
+   
+  }
+  
+  h1,h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+body p {
+    text-align: center;
+}
+
+a:hover {
+    background-color: #ffd61a;
+    opacity: 0.5;
+}
+
+header {
+    text-align: left;
+    height:180px;
+    margin-top :20px;
+}
+
+header h1 {
+    margin-top :15px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    width:1000px;
+    border-bottom: 2px solid #002569;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    height:80px;
+    margin-top:50px;
+    color:#002569;
+}
+
+.container {
+    width : 1000px;
+    margin : 0 auto;
+}
+
+.resultSpace {  
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.resultSpace p {
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+
+.playerImage {
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+    margin-left :70px;
+    float :right;
+}
+
+.btn {
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    background-color: #002569;
+    padding-top :10px;
+    border-radius: 30px;
+    border-style: none;
+    text-decoration: none; /* 下線を削除 */
+    margin-left:50px;
+   
+}
+
+.btn-wrapper2 {
+    width:500px;
+    text-align: center;
+    margin-top :40px;
+    margin-left :450px;
+    display: flex;
+}
+
+.btn_back {
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    background-color: #002569;
+    padding-top :20px;
+    border-radius: 30px;
+    border-style: none;
+    text-decoration: none; /* 下線を削除 */
+    margin-left:50px;
+   
+}
+
+.playimg {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.wrap-container {
+    display: flex;
+    margin: 0 auto;
+    width:1000px;
+
+}
+
+.playerlist {
+    margin-right:10px;
+}
+
+.comment {
+    width:180px;
+    height:280px;
+    background-color:azure;
+    border :solid 1px #002569;
+    
+}
+
+.comment p {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: fit-content;
+    margin-left :650px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+header img {
+    width:50px;
+    height:50px;
+    margin-left:700px;
+}
+
+.btn_vote {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    background-color: #002569;
+    padding-top :10px;
+    border-radius: 30px;
+    border-style: none;
+    text-decoration: none; /* 下線を削除 */
+    margin-top:15px;
+    
+}
+
+.btn_back2 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    background-color: #002569;
+    padding-top :10px;
+    border-radius: 30px;
+    border-style: none;
+    text-decoration: none; /* 下線を削除 */
+    margin-left:200px;
+    
+}
+
+.chart {
+    margin-top:40px;
+}
+
+.chart h3 {
+    font-size: 30px;
+    font-weight: bold;
+}

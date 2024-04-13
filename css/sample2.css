@@ -1,0 +1,416 @@
+body{
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    background-color: #ffe6e6;
+    text-align: center;
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+header{
+    /* background-color: #ffe6e6;
+    border-bottom: 1px solid #ccc; */
+    text-align: center;
+    width:1200px;
+    height: 200px;
+}
+
+header img {
+    img {
+        width: 100%;
+        height: auto;
+      }
+      
+}
+
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:20px;
+    text-align: center;
+    /* border-bottom:1px solid #fff; */
+    /* height:200px; */
+}
+ul{
+    padding: 0;
+    /* border-top: 1px solid #000000; */
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    margin: 20px;
+    width:250px;
+    height: 50px;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+/* クリック時のスタイル */
+li.clicked {
+    background-color: lightblue;
+}
+
+/* クリック制限のスタイル */
+.item:nth-child(n+4) {
+    pointer-events: none; /* 4つ目以降はクリックできないようにする */
+}
+textarea{
+  margin: 3%;
+  width: 95%;
+  height: 230px;
+  font-size:80%;
+  box-shadow: 3px 3px 3px 3px #555;
+}
+
+.orange {
+    /* background-color: darkorange; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.yellow {
+    /* background-color: khaki; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.yellow-green {
+    /* background-color: palegoldenrod; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.thin-green {
+    /* background-color:lightseagreen; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.green {
+    /* background-color:green; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.emotion_area p {
+    font-size: 20px;
+}
+
+#selected_emotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.emotion_picks {
+    margin-right: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+#selected_emotions_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 感情の間のスペース */
+}
+
+#selected_emotions_container .emotion_picks {
+    display: inline-block;
+    justify-content: center;
+    font-size: 30px;
+    border: solid 1px #000000;
+    background-color: #F7A628;
+    width: 200px;
+    height: 100px;
+    padding-top: 40px;
+    border-radius: 50px; /* 丸みを持たせる */
+}
+
+.emotion {
+    margin:5px;
+    width:300px;
+    background-color:rgba(255, 99, 132);
+    color:white;
+    font-weight: bold;
+}
+
+.emotion_picks {
+    display: flex;
+    text-align: center;
+    justify-content: center;    
+    
+}
+  
+.selected_emotions_container {
+    margin:10px;
+    background-color: rgba(255, 99, 132);
+    width:500px;
+    font-weight: 1000;
+}
+
+h3 {
+    margin-bottom:15px;
+}
+
+.post {
+    width:1200px;
+    border-top: 1px solid #ccc; 
+    border-right:1px solid #ccc; 
+    border-left:1px solid #ccc; 
+    border-bottom: 1px solid #ccc; /* 境界線のスタイルを指定 */
+    padding-bottom: 10px; /* 必要に応じて下部の余白を指定 */
+    margin: 0 auto;
+    margin-top:10px;
+    background-color :cornsilk;
+    padding-top: 10px;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    float:left;
+    display: flex; /* Flexbox を使用 */
+    justify-content: flex-start; /* コンテンツを左寄せにする */
+}
+
+.post p {
+    font-size: 20px;
+    justify-content: flex-start; /* コンテンツを左寄せにする */
+}
+
+#preview #preview2  {
+    display: block; /* 画像をブロック要素として表示 */
+    max-width: 100%; /* 画像が親要素にフィットするようにする */
+    margin-top: 10px; /* 画像とテキストの間の余白を指定 */
+    margin : 0 auto;
+}
+
+.myimg {
+    width:200px;
+    height:200px;
+    display: block; /* 画像をブロック要素として表示 */
+    max-width: 100%; /* 画像が親要素にフィットするようにする */
+    object-fit: cover;
+    margin-left: auto; /* 常に右端に寄せる */
+    margin-right:10px;
+}
+
+img {
+    width: 1000px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+.day {
+    float:left;
+    margin-left:100px;
+}
+
+ /* 満足、感謝、嬉しい、ワクワクのリスト項目の背景色をオレンジに設定 */
+ .orange .emotion {
+    background-color: orange;
+}
+
+/* 好き、感心、面白い、楽しいのリスト項目の背景色を黄色に設定 */
+.yellow .emotion {
+    background-color: yellow;
+}
+
+/* すっきり、ドキドキ、安心、穏やかのリスト項目の背景色を黄緑に設定 */
+.yellow-green .emotion {
+    background-color: lightgreen;
+}
+
+/* 普通、退屈、もやもや、緊張のリスト項目の背景色を薄い緑に設定 */
+.thin-green .emotion {
+    background-color: lightgreen;
+}
+
+/* 不安、悲しい、疲れた、イライラのリスト項目の背景色を緑に設定 */
+.green .emotion {
+    background-color: green;
+}
+.output {
+    font-size: 20px;
+    float:left;
+    background-size: cover;
+    background-image:url(../img/background.png);
+    
+}
+
+.mytext {
+    display: inline-block; /* テキストをインラインブロック要素として表示 */
+    vertical-align: top; /* テキストを上端に揃える */
+    text-align: left;   
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: white;
+    width:500px;
+    height: 150px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom:20px;
+
+}
+
+.memo {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    width:300px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-top:10px;
+}
+
+.memo-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cardContainer {
+    width:1000px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin-bottom:5px;
+
+
+   
+}
+
+#cardContainer > .date {
+    /* ここにdateクラスに適用するスタイルを記述します */
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 99, 132);
+    margin-left:350px;
+
+}
+
+.card img {
+    width:100px;
+    height: 150px;
+    object-fit: cover;
+    margin-left:100px;
+    float:right;
+}
+
+.card-content {
+    width:250px;
+
+}
+
+textarea {
+    width:1000px;
+    margin : 0 auto;
+    margin-top :50px;
+}
+
+.send {
+    margin-bottom :30px;
+    margin-top :30px;
+}
+
+.emotion {
+    font-size: 16px;
+    width:100px;
+}
+
+.selectemotion {
+    border: 2px solid pink;
+    width :1000px;
+    margin:0 auto;
+    background-color: whitesmoke;
+}
+
+.emotion-checkbox {
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+}
+       
+    
+
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-left:20px;
+}
+
+.emotion-wrapper {
+    display: flex;
+}
+
+.diary-area {
+    display: flex;
+    width:1200px;
+    height:300px;
+}
+
+.card.selected {
+    background-color: lightgray;
+}
+
+#rightdiary {
+margin-left: 700px;;
+}
+
+.leftdiary {
+    height:300px;
+}
+
+.links {
+    font-size: 16px;
+    background-color:lavenderblush;
+    color:black;
+    border:none;
+    float:left;
+    margin-right:20px;
+    margin-top:30px;
+    
+}
+
+.links:hover {
+    background-color: red;
+}
